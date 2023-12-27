@@ -2,7 +2,6 @@ import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokkit/utils/constants.dart';
-import 'package:pokkit/views/home.dart';
 import 'package:pokkit/views/init.dart';
 import 'package:pokkit/widgets/button.dart';
 

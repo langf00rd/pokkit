@@ -13,10 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
         textTheme: GoogleFonts.interTextTheme(textTheme).copyWith(
           bodyMedium: GoogleFonts.inter(
             textStyle: const TextStyle(fontWeight: FontWeight.w500),

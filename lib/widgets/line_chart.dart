@@ -14,15 +14,11 @@ class _LineChartSample2State extends State<LineChartSample2> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: <Widget>[
+      children: [
         AspectRatio(
           aspectRatio: 1.70,
-          child: Padding(
-            padding:
-                const EdgeInsets.only(right: 18, left: 12, top: 24, bottom: 12),
-            child: LineChart(
-              mainData(),
-            ),
+          child: LineChart(
+            mainData(),
           ),
         ),
       ],
@@ -59,26 +55,28 @@ class _LineChartSample2State extends State<LineChartSample2> {
   }
 
   Widget leftTitleWidgets(double value, TitleMeta meta) {
-    const style = TextStyle(
-      fontWeight: FontWeight.bold,
-      fontSize: 10,
-    );
-    String text;
-    switch (value.toInt()) {
-      case 1:
-        text = '10K';
-        break;
-      case 3:
-        text = '30k';
-        break;
-      case 5:
-        text = '50k';
-        break;
-      default:
-        return Container();
-    }
+    // const style = TextStyle(
+    //   fontWeight: FontWeight.bold,
+    //   fontSize: 10,
+    // );
+    // String text;
+    // switch (value.toInt()) {
+    //   case 1:
+    //     text = '10K';
+    //     break;
+    //   case 3:
+    //     text = '30k';
+    //     break;
+    //   case 5:
+    //     text = '50k';
+    //     break;
+    //   default:
+    //     return Container();
+    // }
 
-    return Text(text, style: style, textAlign: TextAlign.left);
+    return const SizedBox();
+
+    // return Text(text, style: style, textAlign: TextAlign.left);
   }
 
   LineChartData mainData() {

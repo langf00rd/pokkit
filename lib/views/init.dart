@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:pokkit/views/budget.dart';
 import 'package:pokkit/views/home.dart';
 
 class Init extends StatefulWidget {
@@ -22,15 +22,15 @@ class _InitState extends State<Init> {
   List<Widget> page = <Widget>[
     const Home(),
     const Text('some other page'),
-    const Text('some other page'),
-    // const Text('coming soon'),
+    const Budget(),
+    const Text('coming soon'),
   ];
 
   @override
   Widget build(BuildContext context) {
     List<BottomNavigationBarItem> bottomNavigationBarItems = [
       const BottomNavigationBarItem(
-        icon: Icon(LucideIcons.barChart),
+        icon: Icon(LucideIcons.heart),
         label: 'Home',
       ),
       const BottomNavigationBarItem(
@@ -38,13 +38,13 @@ class _InitState extends State<Init> {
         label: 'Spends',
       ),
       const BottomNavigationBarItem(
+        icon: Icon(LucideIcons.list),
+        label: 'Budget',
+      ),
+      const BottomNavigationBarItem(
         icon: Icon(LucideIcons.coins),
         label: 'Invest',
       ),
-      // const BottomNavigationBarItem(
-      //   icon: Icon(LucideIcons.settings2),
-      //   label: 'Settings',
-      // ),
     ];
     return Scaffold(
       body: Center(
