@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pokkit/views/sign_in.dart';
+import 'package:pokkit/views/auth/sign_in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +26,9 @@ class MyApp extends StatelessWidget {
           bodyMedium: GoogleFonts.inter(
             textStyle: const TextStyle(fontWeight: FontWeight.w500),
           ),
+        ),
+        bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: Colors.white,
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokkit/utils/constants.dart';
-import 'package:pokkit/views/choose_currency.dart';
-import 'package:pokkit/widgets/button.dart';
-import 'package:pokkit/widgets/logo.dart';
+import 'package:pokkit/views/onboarding/choose_currency.dart';
+import 'package:pokkit/widgets/ui/button.dart';
+import 'package:pokkit/widgets/ui/logo.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({super.key});

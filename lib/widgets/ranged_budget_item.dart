@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokkit/utils/constants.dart';
-import 'package:pokkit/widgets/range.dart';
+import 'package:pokkit/widgets/ui/range.dart';
 
 class RangedBudgetItem extends StatelessWidget {
   const RangedBudgetItem({

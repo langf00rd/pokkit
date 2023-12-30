@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:pokkit/utils/constants.dart';
 
 class Button extends StatelessWidget {
-  const Button(
-      {super.key,
-      required this.action,
-      this.prefix,
-      this.suffix,
-      this.width = double.infinity,
-      required this.label,
-      this.margin,
-      this.color,
-      this.textColor,
-      this.isOutlined,
-      this.radius});
+  const Button({
+    super.key,
+    required this.action,
+    this.prefix,
+    this.suffix,
+    this.width = double.infinity,
+    required this.label,
+    this.margin,
+    this.color,
+    this.textColor,
+    this.isOutlined,
+    this.radius,
+  });
 
   final double? radius;
   final Color? color;
@@ -53,7 +54,7 @@ class Button extends StatelessWidget {
               children: [
                 prefix != null
                     ? Container(
-                        margin: const EdgeInsets.only(right: 10),
+                        margin: const EdgeInsets.only(right: 7),
                         child: prefix,
                       )
                     : const SizedBox(),
@@ -66,7 +67,7 @@ class Button extends StatelessWidget {
                 ),
                 suffix != null
                     ? Container(
-                        margin: const EdgeInsets.only(left: 10),
+                        margin: const EdgeInsets.only(left: 7),
                         child: suffix,
                       )
                     : const SizedBox(),

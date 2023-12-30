@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
+import 'package:pokkit/utils/constants.dart';
 import 'package:pokkit/views/budget.dart';
 import 'package:pokkit/views/home.dart';
 
@@ -21,28 +22,36 @@ class _InitState extends State<Init> {
 
   List<Widget> page = <Widget>[
     const Home(),
-    const Text('some other page'),
+    const Text('spends page'),
+    const Text('ai stuff here'),
     const Budget(),
-    const Text('coming soon'),
+    const Text('invest?'),
   ];
 
   @override
   Widget build(BuildContext context) {
     List<BottomNavigationBarItem> bottomNavigationBarItems = [
       const BottomNavigationBarItem(
-        icon: Icon(LucideIcons.heart),
+        icon: Icon(LucideIcons.heart, size: 20),
         label: 'Home',
       ),
       const BottomNavigationBarItem(
-        icon: Icon(LucideIcons.wallet),
+        icon: Icon(LucideIcons.wallet, size: 20),
         label: 'Spends',
       ),
+      BottomNavigationBarItem(
+        icon: Container(
+          transform: Matrix4.translationValues(0.0, 10.0, 0.0),
+          child: Icon(LucideIcons.sparkles, color: Color(kPrimary), size: 28),
+        ),
+        label: '',
+      ),
       const BottomNavigationBarItem(
-        icon: Icon(LucideIcons.list),
+        icon: Icon(LucideIcons.list, size: 20),
         label: 'Budget',
       ),
       const BottomNavigationBarItem(
-        icon: Icon(LucideIcons.coins),
+        icon: Icon(LucideIcons.coins, size: 20),
         label: 'Invest',
       ),
     ];
